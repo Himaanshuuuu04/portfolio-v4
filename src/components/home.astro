@@ -2,33 +2,46 @@
 import LetterGlitch from "../React/LetterGlitch.tsx";
 import LogoWall from "../components/logoWall.astro";
 import SkillsList from "../React/SkillsList.tsx";
+import DecryptedText from "@/React/DecryptedText";
 ---
 
 <section class="text-[var(--white)] mt-12 md:mt-0" id="home">
   <div class="max-w-5xl mx-auto space-y-8 md:py-36 pb-14">
     <div class="text-left space-y-4">
-      <p class="text-md md:text-lg text-[var(--white-icon)] shiny-white">
-        Hi, I'm Oscar Hernandez
-      </p>
+      <p class=""></p>
+      <DecryptedText
+        client:load
+        text="Hi, I'm Himanshu Singh"
+        animateOn="view"
+        useOriginalCharsOnly={true}
+        maxIterations={20}
+      sequential={true}
+        speed={100}
+       
+        className="text-md md:text-lg text-[var(--white-icon)]"
+      />
+
       <div
         class="flex flex-col lg:flex-row lg:items-center space-y-4 lg:space-y-0 lg:space-x-8 md:gap-4"
       >
         <h1
           class="text-[var(--white)] text-5xl md:text-6xl font-medium text-pretty leading-none"
         >
-          Software <br /> Developer
+          S<span class="text-[var(--sec)]">ø</span>ftware <br /> Devel<span
+            class="text-[var(--sec)]">ø</span
+          >per
         </h1>
         <p class="text-md md:text-2xl text-[var(--white-icon)]">
-          Transforming ideas into interactive and seamless digital experiences
-          with cutting-edge <span class="text-[var(--sec)] shiny-sec"
-            >frontend</span
-          > development.
+          Building robust and scalable web applications as a <span
+            class="text-[var(--sec)] shiny-sec font-medium">Full-stack</span
+          > Developer, blending modern frontend experiences with efficient backend
+          solutions.
         </p>
       </div>
       <div class="flex justify-start gap-2 pt-3 md:pt-6">
         <a
           target="_blank"
-          href="https://github.com/gothsec"
+          href="https://github.com/Himaanshuuuu04"
           aria-label="GitHub"
           class="text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-1 border-[var(--white-icon-tr)] p-3 rounded-xl bg-[#1414149c] hover:bg-[var(--white-icon-tr)]"
         >
@@ -45,7 +58,7 @@ import SkillsList from "../React/SkillsList.tsx";
         </a>
         <a
           target="_blank"
-          href="https://linkedin.com/in/hernandezoscar-dev"
+          href="https://www.linkedin.com/in/himaansh-uu/"
           aria-label="LinkedIn"
           class="text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-1 border-[var(--white-icon-tr)] p-3 rounded-xl bg-[#1414149c] hover:bg-[var(--white-icon-tr)]"
         >
@@ -62,7 +75,7 @@ import SkillsList from "../React/SkillsList.tsx";
         </a>
         <a
           target="_blank"
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=oscarandreshernandezpineda@gmail.com&su=Hey%20Oscar!"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=xdev.himanshu@gmail.com&su=Hey%20Himanshu!"
           aria-label="Email"
           class="text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-1 border-[var(--white-icon-tr)] p-3 rounded-xl bg-[#1414149c] hover:bg-[var(--white-icon-tr)]"
         >
@@ -91,7 +104,7 @@ import SkillsList from "../React/SkillsList.tsx";
         <LetterGlitch
           client:load
           glitchColors={["#5e4491", "#A476FF", "#241a38"]}
-          glitchSpeed={33}
+          glitchSpeed={70}
           centerVignette={false}
           outerVignette={true}
           smooth={true}

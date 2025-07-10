@@ -1,9 +1,9 @@
 ---
 import { Image } from "astro:assets";
-import svgl from "../../public/svgl.png";
-import stockin from "../../public/stockin.png";
-import moviesfordevs from "../../public/moviesfordevs.png";
-import tron from "../../public/tron.png";
+import notify from "../../public/notify.webp";
+import flixie from "../../public/flixie.webp";
+import converse from "../../public/converse.webp";
+
 
 interface Project {
   title: string;
@@ -15,33 +15,27 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "MoviesForDevs",
-    image: moviesfordevs as ImageMetadata,
-    link: "https://github.com/gothsec/MoviesForDevs",
-    preview: "https://movies-for-devs.vercel.app",
-    status: "On Development",
+    title: "Notify",
+    image: notify as ImageMetadata,
+    link: "https://github.com/Himaanshuuuu04/Notify",
+    preview: "https://notify-snowy.vercel.app/",
+    status: "Co-Developed",
   },
   {
-    title: "StockIn",
-    image: stockin as ImageMetadata,
-    link: "https://github.com/gothsec/stockin-demo",
-    preview: "https://stockin-demo.vercel.app",
-    status: "On Development",
+    title: "Converse",
+    image: converse as ImageMetadata,
+    link: "https://github.com/Himaanshuuuu04/Converse",
+    preview: "https://chatwithconverse.xyz/",
+    status: "Co-Developed",
   },
   {
-    title: "Svgl.app",
-    image: svgl as ImageMetadata,
-    link: "https://github.com/pheralb/svgl",
-    preview: "https://svgl.app",
-    status: "Contributor",
+    title: "Flixie",
+    image: flixie as ImageMetadata,
+    link: "https://github.com/Himaanshuuuu04/Flixie.io",
+    preview: "https://flixie.himanshu.engineer/",
+    status: "Fully-Developed",
   },
-  {
-    title: "Tron Legacy Web",
-    image: tron as ImageMetadata,
-    link: "https://github.com/Gothsec/Tron-Legacy-web",
-    preview: "https://tron-legacy-web.vercel.app/",
-    status: "Template (not official)",
-  },
+
 ];
 ---
 
@@ -117,7 +111,7 @@ const projects: Project[] = [
     </div>
     <a
       target="_blank"
-      href="https://github.com/Gothsec?tab=repositories"
+      href="https://github.com/Himaanshuuuu04?tab=repositories"
       aria-label="GitHub"
       class="w-full flex items-center justify-center gap-2 mt-9 text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-[var(--white-icon-tr)] p-3 rounded-full bg-[#1414149c] hover:bg-[var(--white-icon-tr)] hover:scale-105"
     >
