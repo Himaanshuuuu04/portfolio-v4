@@ -1,13 +1,9 @@
 ---
-import { Image } from "astro:assets";
-import notify from "../../public/notify.webp";
-import flixie from "../../public/flixie.webp";
-import converse from "../../public/converse.webp";
-import TiltedCard from "@/React/TiltedCard";
+import TiltedCardWrapper from "@/React/TiltedCardWrapper";
 
 interface Project {
   title: string;
-  image: ImageMetadata;
+  image: string;
   link: string;
   preview: string;
   status: string;
@@ -16,21 +12,21 @@ interface Project {
 const projects: Project[] = [
   {
     title: "Notify",
-    image: notify as ImageMetadata,
+    image: "/notify.webp",
     link: "https://github.com/Himaanshuuuu04/Notify",
     preview: "https://notify-snowy.vercel.app/",
     status: "Co-Developed",
   },
   {
     title: "Converse",
-    image: converse as ImageMetadata,
+    image: "/converse.webp",
     link: "https://github.com/Himaanshuuuu04/Converse",
     preview: "https://chatwithconverse.xyz/",
     status: "Co-Developed",
   },
   {
     title: "Flixie",
-    image: flixie as ImageMetadata,
+    image: "/flixie.webp",
     link: "https://github.com/Himaanshuuuu04/Flixie.io",
     preview: "https://flixie.himanshu.engineer/",
     status: "Fully-Developed",
@@ -56,9 +52,9 @@ const projects: Project[] = [
               rel="noopener noreferrer"
               class="block"
             >
-              <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 -mb-4">
-                <TiltedCard
-                  imageSrc={project.image.src}
+              <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <TiltedCardWrapper
+                  imageSrc={project.image}
                   altText={project.title}
                   captionText={project.title}
                   containerHeight="300px"
